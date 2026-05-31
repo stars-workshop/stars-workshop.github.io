@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+    <title>STARS Workshop</title>
+    <style>
+      :root {
+        --bg: #f7f9fc;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #0f766e;
+        --border: #d1d5db;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      header,
+      section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+        line-height: 1.25;
+      }
+
+      h1 {
+        margin-bottom: 0.4rem;
+        font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+      }
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .title-row h1 {
+        margin: 0;
+      }
+
+      .title-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        flex: 0 0 auto;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .date {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        font-weight: bold;
+      }
+
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      li + li {
+        margin-top: 0.3rem;
+      }
+
+      .organisers li {
+        margin-top: 0.45rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="title-row">
+          <img class="title-icon" src="favicon.svg" alt="">
+          <h1>STARS 2026</h1>
+        </div>
+        <p class="subtitle">1st workshop on STAtic + Runtime verification Synergies</p>
+        <p class="date">23/24 November 2026 &ndash; Satellite event of
+            <a href="https://sefm-conference.github.io/2026/">SEFM 2026, Malta</a></p>
+      </header>
+
+      <section aria-labelledby="motivation-title">
+        <p>
+          STARS 2026 is a forum for researchers interested in exploring and
+          advancing the integration of static and runtime verification
+          techniques.
+        </p>
+
+        <p>
+          Static and runtime verification are extremely successful approaches to
+          software correctness. On the one hand, static verification requires
+          access to program code and guarantees the absence of bugs, but may
+          produce false positives. On the other hand, runtime verification can
+          work without program code access and can be tailored to only report
+          real bugs, but cannot find latent bugs before execution.
+        </p>
+        <p>
+          These techniques can complement each other. For instance, runtime
+          monitors can be deployed to observe parts of a system that cannot be
+          statically verified, or to enforce properties for which static
+          verification may be too restrictive. This interplay is especially
+          relevant for heterogeneous systems where some components cannot be
+          statically analyzed. Some combinations of static and runtime
+          verification are already widely studied (for instance, gradual
+          typing), but the broader design space is rich and worth deeper
+          exploration.
+        </p>
+      </section>
+
+      <section aria-labelledby="topics-title">
+        <h2 id="topics-title">Topics of Interest</h2>
+        <p>
+          The workshop welcomes talk proposals on theoretical and practical
+          approaches that combine static and runtime verification, including but
+          not limited to:
+        </p>
+        <ul>
+          <li>Program analysis and verification</li>
+          <li>Monitor synthesis</li>
+          <li>Gradual typing</li>
+          <li>Instrumentation techniques</li>
+          <li>System adaptation, including shields, gateways, and interceptors</li>
+          <li>
+            Correct-by-construction techniques such as controlled system synthesis
+            and supervisory control
+          </li>
+          <li>Fault detection, isolation, recovery, and repair</li>
+          <li>Correctness specification and specification mining</li>
+          <li>Applications to Security and the Internet of Things</li>
+          <li>
+            Surveys, retrospective studies, position papers, benchmarking studies,
+            empirical evaluations, and tool papers related to the above
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="submission-title">
+        <h2 id="submission-title">Submission of Talk Proposals</h2>
+        <p>
+            Please submit your talk proposal here:
+            <strong><a href="https://forms.office.com/e/3yQB8Smpst">https://forms.office.com/e/3yQB8Smpst</a></strong>
+        </p>
+        <p>The submission deadline is <strong>15 September 2026</strong>.</p>
+      </section>
+
+      <section aria-labelledby="organisers-title">
+        <h2 id="organisers-title">Organisers</h2>
+        <ul class="organisers">
+          <li>
+            <a href="https://people.compute.dtu.dk/alcsc">Alceste Scalas</a> - Technical University of Denmark
+            (<a href="mailto:alcsc@dtu.dk">alcsc@dtu.dk</a>)
+          </li>
+          <li>
+            <a href="https://staff.um.edu.mt/afra1/">Adrian Francalanza</a> - University of Malta
+            (<a href="mailto:adrian.francalanza@um.edu.mt">adrian.francalanza@um.edu.mt</a>)
+          </li>
+        </ul>
+        <p>This event is partially supported by the
+            Independent Research Fund Denmark project <em>Hyben</em>.</p>
+      </section>
+
+      <footer>
+        STARS &ndash; 1st workshop on STAtic + Runtime verification Synergies
+      </footer>
+    </main>
+  </body>
+</html>
