@@ -5,110 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>STARS Workshop</title>
-    <style>
-      :root {
-        --bg: #f7f9fc;
-        --surface: #ffffff;
-        --text: #1f2937;
-        --muted: #4b5563;
-        --accent: #0f766e;
-        --border: #d1d5db;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Georgia", "Times New Roman", serif;
-        line-height: 1.6;
-        color: var(--text);
-        background: var(--bg);
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 2rem 1rem 3rem;
-      }
-
-      header,
-      section {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 1.25rem;
-        margin-bottom: 1rem;
-      }
-
-      h1,
-      h2 {
-        margin-top: 0;
-        line-height: 1.25;
-      }
-
-      h1 {
-        margin-bottom: 0.4rem;
-        font-size: clamp(1.7rem, 2.8vw, 2.2rem);
-      }
-
-      .title-row {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        margin-bottom: 0.4rem;
-      }
-
-      .title-row h1 {
-        margin: 0;
-      }
-
-      .title-icon {
-        width: 2.25rem;
-        height: 2.25rem;
-        flex: 0 0 auto;
-      }
-
-      .subtitle {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      .date {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.05rem;
-        font-weight: bold;
-      }
-
-      ul {
-        margin: 0.5rem 0 0;
-        padding-left: 1.25rem;
-      }
-
-      li + li {
-        margin-top: 0.3rem;
-      }
-
-      .organisers li {
-        margin-top: 0.45rem;
-      }
-
-      a {
-        color: var(--accent);
-      }
-
-      footer {
-        color: var(--muted);
-        font-size: 0.95rem;
-        text-align: center;
-        margin-top: 0.5rem;
-      }
-    </style>
   </head>
   <body>
     <main class="container">
@@ -127,6 +25,31 @@
           techniques.
         </p>
       </header>
+
+      <section class="news-section" aria-labelledby="news">
+        <ul>
+          <li>
+            The <strong><a href="programme.html">STARS 2026 programme</a></strong> is now available.
+          </li>
+          <li>
+            <strong>The registration to STARS 2026 is now open</strong> through the
+            <a href="https://sefm-conference.github.io/2026/registration/">SEFM 2026 registration page</a>.
+            The early registration deadline is <strong>23 October</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <nav class="table-of-contents" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#motivation-topics-title">Motivation and Topics</a></li>
+          <li><a href="#invited-title">Invited Speakers</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="#organisers-title">Organisers</a></li>
+          <li><a href="#programme-committee-title">Programme Committee</a></li>
+          <li><a href="cfp.html">Call for Papers and Talk Proposals (CLOSED)</a></li>
+        </ul>
+      </nav>
 
       <section aria-labelledby="motivation-topics-title">
         <h2 id="motivation-topics-title">Motivation and Topics</h2>
@@ -173,7 +96,7 @@
           </li>
         </ul>
 
-        <p style="font-style: italic;">STARS 2026 is partially supported by the
+        <p class="support-note">STARS 2026 is partially supported by the
         Independent Research Fund Denmark project <em>Hyben</em>.</p>
       </section>
 
@@ -184,55 +107,6 @@
           <li><a href="https://rolandkuhn.com/">Roland Kuhn</a> - RKSW UG, Germany</li>
           <li><a href="https://person.dibris.unige.it/ancona-davide/">Davide Ancona</a> - Università degli Studi di Genova, Italy</li>
         </ul>
-      </section>
-
-      <section aria-labelledby="submission-title">
-        <h2 id="submission-title">Submission of Talk Proposals and Full Papers</h2>
-        <p>
-          STARS will publish joint post-proceedings on <a href="https://link.springer.com/series/0558">Springer Lecture Notes in Computer Science (LNCS)</a>
-          together with the
-          <a href="https://sefm-conference.github.io/2026/workshops/">other workshops at SEFM 2026</a>.
-          We are also planning a later journal special issue
-          &ndash; quite likely, on <a href="https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming">Elsevier's Journal of Logical and Algebraic Methods in Programming</a>.
-        <p>
-          STARS welcomes two categories of submission:
-        </p>
-        <ul>
-          <li>
-            <strong>Talk proposals</strong> that, if accepted, will be presented
-            at the workshop and later listed in the post-proceedings (but this
-            will not constitute a formal publication). Talk proposal can be
-            about new research, preliminary results, experience reports, as well
-            as papers already published elsewhere.
-          </li>
-          <li>
-            <strong>Full papers</strong> that, if accepted, will be presented at
-            the workshop and later published in the post-proceedings. This
-            category includes novel research results, tool papers, case studies,
-            practical experience reports, etc. Full papers can be at most 15
-            pages long (not including references) and must not have been already
-            published, nor can they be concurrently submitted for publication
-            elsewhere. Full papers can include clearly marked supplementary
-            materials (e.g., appendices) above the page limit, but the reviewers
-            are not required to read them. To format your submission, you can
-            use any single-column style broadly similar to
-            <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS</a>;
-            if accepted, the paper will later need to be formatted with the
-            appropriate style for the planned post-proceedings.
-          </li>
-        </ul>
-        <p>
-            Please submit your talk proposals or full papers here:
-        </p>
-        <p style="text-align: center; background-color: yellow;">
-          <strong><a href="https://easychair.org/conferences/?conf=stars2026">https://easychair.org/conferences/?conf=stars2026</a></strong>
-        </p>
-        <p>The submission deadlines are (<a href="https://time.is/Anywhere_on_Earth">anywhere on Earth</a>):</p>
-        <ul>
-          <li><strong>8 September 2026:</strong> full papers</li>
-          <li><strong>15 September 2026:</strong> talk proposals</li>
-        </ul>
-        <p>The author notifications will be on <strong>7 October 2026</strong>.</p>
       </section>
 
       <section aria-labelledby="organisers-title">
