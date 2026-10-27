@@ -183,9 +183,12 @@ footer {
 }
 
 .schedule .break td,
-.schedule .conclusion td,
-.schedule td.welcome {
+.schedule .conclusion td {
   background: color-mix(in srgb, var(--accent) 12%, white);
+}
+
+.schedule td.welcome {
+  font-weight: bold;
 }
 
 .schedule td.invited {
