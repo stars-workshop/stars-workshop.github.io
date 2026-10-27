@@ -32,7 +32,6 @@
         <p>
             <strong>The registration to STARS 2026 is now open</strong> through the
             <a href="https://sefm-conference.github.io/2026/registration/">SEFM 2026 registration page</a>.
-            The early registration deadline is <strong>23 October</strong>.
         </p>
       </section>
 
@@ -55,149 +54,69 @@
 
       <section aria-labelledby="programme-title">
         <h2 id="programme-title">Programme</h2>
-        <p>
-          Here is the list of talks that will be presented at STARS 2026. The
-          detailed workshop schedule will be announced soon.
-        </p>
-        <ul>
-          <li>
-            <a href="#talk-retrospective-trace-expressions">
-              <strong>Invited Talk:</strong> A Retrospective on Trace
-              Expressions: The Past, the Present and the Future
-            </a>
-          </li>
-          <li>
-            <a href="#talk-blockchain-network">
-              <strong>Invited Talk:</strong> Verifying a Blockchain Node's
-              Network Behaviour using Typestate + Session Types in Rust
-            </a>
-          </li>
-          <li>
-            <a href="#talk-static-runtime-mpst">
-              <strong>Invited Talk:</strong> Static and Runtime Verification on
-              Multiparty Session Protocols
-            </a>
-          </li>
-          <li>
-            <a href="#talk-runtime-uncertainty">
-              Runtime Verification under Uncertainty: Experiences from STARK
-            </a>
-          </li>
-          <li>
-            <a href="#talk-low-latency-tracing">
-              Towards Low-Latency Model-Based Trace-Checking in Maude
-            </a>
-          </li>
-          <li>
-            <a href="#talk-smart-home-monitoring">
-              Dynamic Device Environments in Runtime Verification: Monitoring
-              Power Consumption in Smart Homes
-            </a>
-          </li>
-          <li>
-            <a href="#talk-autoware-safety">
-              Experimental Safety Verification of Autoware through Simulink
-              Modeling and SMT-Based Analysis
-            </a>
-          </li>
-          <li>
-            <a href="#talk-multiparty-monitoring">
-              Distributed Monitoring of Multiparty Session Protocols using
-              Relative Types
-            </a>
-          </li>
-          <li>
-            <a href="#talk-fault-tolerance">
-              Verifying Fault Tolerance using Multiparty Session Types
-            </a>
-          </li>
-        </ul>
-      </section>
 
-      <section aria-labelledby="talk-retrospective-trace-expressions">
-        <h2 id="talk-retrospective-trace-expressions">
-          Invited Talk: A Retrospective on Trace Expressions: The Past, the
-          Present and the Future
-        </h2>
-        <p class="authors">
-          <strong>
-            <a href="https://person.dibris.unige.it/ancona-davide/">
-              Davide Ancona
-            </a>
-          </strong>
-          (Università degli Studi di Genova, Italy)
-        </p>
-        <p>
-          Trace expressions are a formal, system-agnostic language tailored for
-          rewriting-based runtime verification, specifically designed to bridge
-          the gap between rigorous formal methods and the practical needs of
-          software engineers. In this talk, I will first introduce the core
-          formalism and outline its operational semantics, built on the
-          foundational notion of Antimirov's partial derivatives. Next, I will
-          showcase how the formalism is employed in significant real-world
-          applications. Finally, I will discuss open challenges and directions
-          for future research, including the relationship between trace
-          expressions and behavioral types.
-        </p>
-        <h3>Short Bio</h3>
-        <p>
-          Davide Ancona is an Associate Professor at the University of Genoa,
-          Italy. He is a senior investigator and coordinator for the "Secure and
-          Reliable Systems" research line within the DIBRIS department. His main
-          research interests include Runtime Verification, type systems, and the
-          design and foundations of programming languages. He is currently the
-          President of the Executive Board of
-          <a href="https://sites.google.com/aito.org/home">AITO</a>, which serves
-          as the steering committee for
-          <a href="https://sites.google.com/aito.org/home/ecoop">ECOOP</a>. Since
-          2016, he has been co-organizing the
-          <a href="https://conf.researchr.org/series/vortex">VORTEX</a> workshop
-          on Runtime Verification, co-located with ECOOP.
-        </p>
-      </section>
-
-      <section aria-labelledby="talk-blockchain-network">
-        <h2 id="talk-blockchain-network">
-          Invited Talk: Verifying a Blockchain Node's Network Behaviour using Typestate +
-          Session Types in Rust
-        </h2>
-        <p class="authors">
-          <strong><a href="https://rolandkuhn.com/">Roland Kuhn</a></strong>
-          (RKSW UG, Germany)
-        </p>
-        <p>
-          This talk presents the ongoing work towards the
-          correct-by-construction implementation of
-          <a href="https://github.com/pragma-org/amaru">Amaru</a>, a new
-          <a href="https://cardano.org/">Cardano</a> blockchain node client
-          written in Rust. One of the most challenging aspects of this work is
-          the correct implementation of the proof-of-stake protocol used in
-          Cardano, called
-          <a href="https://cardano.org/ouroboros/">Ouroboros</a>; this challenge
-          is further complicated by the fact that Amaru is a concurrent program
-          based on actors, which are notoriously difficult to verify. This talk
-          will illustrate the main iterations of our design and implementation
-          of Amaru: in particular, how we modelled the Ouroboros protocol
-          specification using a variant of session types, and how we enforced
-          this specification in Amaru's Rust code (with different approaches,
-          including runtime monitoring and compile-time type-level computations)
-          to ensure that Amaru's internal actors never deadlock and implement
-          Ouroboros correctly.
-        </p>
-        <h3>Short Bio</h3>
-        <p>
-          Roland Kuhn works on Cardano node diversity, including consensus and
-          deterministic simulation for <a href="https://amaru.global/">Amaru</a>,
-          and consults on satellite operations and distributed systems. He is
-          the author of <em>Reactive Design Patterns</em> and co-author of the
-          Reactive Manifesto. Previously, he was CTO and co-founder of Actyx and
-          led the Akka project at Lightbend.
-        </p>
+        <table class="schedule">
+          <thead>
+            <tr><th>Time</th><th>Session</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">9:00</td>
+              <td class="welcome">Welcome to STARS 2026</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="invited">Invited talk: <strong>Nobuko Yoshida</strong> (University of Oxford, United Kingdom) &ndash; <a href="#talk-static-runtime-mpst">Static and Runtime Verification of Multiparty Session Protocols</a></td>
+            </tr>
+            <tr><td>9:30</td></tr>
+            <tr class="break"><td>10:00</td><td>Coffee break</td></tr>
+            <tr>
+              <td>10:30</td>
+              <td rowspan="2" class="invited">Invited talk: <strong>Roland Kuhn</strong> (RKSW UG, Germany) &ndash; <a href="#talk-blockchain-network">Verifying a Blockchain Node's Network Behaviour using Typestate + Session Types in Rust</a></td>
+            </tr>
+            <tr><td>11:00</td></tr>
+            <tr>
+              <td>11:30</td>
+              <td>Jorge A. Pérez &ndash; <a href="#talk-multiparty-monitoring">Distributed Monitoring of Multiparty Session Protocols using Relative Types</a></td>
+            </tr>
+            <tr>
+              <td>12:00</td>
+              <td>Matthew Alan Le Brun &ndash; <a href="#talk-fault-tolerance">Verifying Fault Tolerance using Multiparty Session Types</a></td>
+            </tr>
+            <tr class="break">
+              <td>12:30</td>
+              <td rowspan="2">Lunch break</td>
+            </tr>
+            <tr class="break"><td>13:00</td></tr>
+            <tr>
+              <td>13:30</td>
+              <td rowspan="2" class="invited">Invited talk: <strong>Davide Ancona</strong> (Università degli Studi di Genova, Italy) &ndash; <a href="#talk-retrospective-trace-expressions">A Retrospective on Trace Expressions: The Past, the Present and the Future</a></td>
+            </tr>
+            <tr><td>14:00</td></tr>
+            <tr>
+              <td>14:30</td>
+              <td>Adrián Riesco and Juan Rodriguez-Hortala &ndash; <a href="#talk-low-latency-tracing">Towards Low-Latency Model-Based Trace-Checking in Maude</a></td>
+            </tr>
+            <tr class="break"><td>15:00</td><td>Coffee break</td></tr>
+            <tr>
+              <td>15:30</td>
+              <td>Daisuke Ishii et al. &ndash; <a href="#talk-autoware-safety">Experimental Safety Verification of Autoware through Simulink Modeling and SMT-Based Analysis</a></td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td>Sebastián Betancourt &ndash; <a href="#talk-runtime-uncertainty">Runtime Verification under Uncertainty: Experiences from STARK</a></td>
+            </tr>
+            <tr>
+              <td>16:30</td>
+              <td>Elli Anastasiadi et al. &ndash; <a href="#talk-smart-home-monitoring">Dynamic Device Environments in Runtime Verification: Monitoring Power Consumption in Smart Homes</a></td>
+            </tr>
+            <tr class="conclusion"><td>17:00</td><td>Conclusion</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section aria-labelledby="talk-static-runtime-mpst">
         <h2 id="talk-static-runtime-mpst">
-          Invited Talk: Static and Runtime Verification on Multiparty Session
+          Invited Talk: Static and Runtime Verification of Multiparty Session
           Protocols
         </h2>
         <p class="authors">
@@ -248,168 +167,84 @@
         </p>
       </section>
 
-      <section aria-labelledby="talk-runtime-uncertainty">
-        <h2 id="talk-runtime-uncertainty">
-          Runtime Verification under Uncertainty: Experiences from STARK
+      <section aria-labelledby="talk-blockchain-network">
+        <h2 id="talk-blockchain-network">
+          Invited Talk: Verifying a Blockchain Node's Network Behaviour using Typestate +
+          Session Types in Rust
         </h2>
         <p class="authors">
-          <strong>
-            <a href="https://sites.google.com/view/joanbetancourt">Sebastián Betancourt</a>
-          </strong>
-          (Eindhoven University of Technology, Netherlands)
-        </p>
-
-        <p>
-          The STARK tool set has been introduced for the verification and
-          analysis of systems operating under uncertainty. It offers evolution
-          sequences for the representation of system behaviour, namely
-          sequences of distributions over states generated by a model of a
-          program operating in an evolving environment.
+          <strong><a href="https://rolandkuhn.com/">Roland Kuhn</a></strong>
+          (RKSW UG, Germany)
         </p>
         <p>
-          We have been working on runtime verification (RV) of systems under
-          uncertainty using STARK. Since the evolution-sequence model was
-          originally developed for (static) statistical model checking, we have
-          adapted our framework to support runtime observations.
+          This talk presents the ongoing work towards the
+          correct-by-construction implementation of
+          <a href="https://github.com/pragma-org/amaru">Amaru</a>, a new
+          <a href="https://cardano.org/">Cardano</a> blockchain node client
+          written in Rust. One of the most challenging aspects of this work is
+          the correct implementation of the proof-of-stake protocol used in
+          Cardano, called
+          <a href="https://cardano.org/ouroboros/">Ouroboros</a>; this challenge
+          is further complicated by the fact that Amaru is a concurrent program
+          based on actors, which are notoriously difficult to verify. This talk
+          will illustrate the main iterations of our design and implementation
+          of Amaru: in particular, how we modelled the Ouroboros protocol
+          specification using a variant of session types, and how we enforced
+          this specification in Amaru's Rust code (with different approaches,
+          including runtime monitoring and compile-time type-level computations)
+          to ensure that Amaru's internal actors never deadlock and implement
+          Ouroboros correctly.
         </p>
+        <h3>Short Bio</h3>
         <p>
-          This presentation explains the challenges encountered in developing a
-          formal theory of RV in this context, as well as the lessons learned
-          from developing a safety shield for an autonomous-driving case study.
+          Roland Kuhn works on Cardano node diversity, including consensus and
+          deterministic simulation for <a href="https://amaru.global/">Amaru</a>,
+          and consults on satellite operations and distributed systems. He is
+          the author of <em>Reactive Design Patterns</em> and co-author of the
+          Reactive Manifesto. Previously, he was CTO and co-founder of Actyx and
+          led the Akka project at Lightbend.
         </p>
       </section>
 
-      <section aria-labelledby="talk-low-latency-tracing">
-        <h2 id="talk-low-latency-tracing">
-          Towards Low-Latency Model-Based Trace-Checking in Maude
+      <section aria-labelledby="talk-retrospective-trace-expressions">
+        <h2 id="talk-retrospective-trace-expressions">
+          Invited Talk: A Retrospective on Trace Expressions: The Past, the
+          Present and the Future
         </h2>
         <p class="authors">
           <strong>
-            <a href="https://produccioncientifica.ucm.es/investigadores/145108/colaboracion/investigador/1211848">Adrián Riesco</a>
+            <a href="https://person.dibris.unige.it/ancona-davide/">
+              Davide Ancona
+            </a>
           </strong>
-          (Universidad Complutense de Madrid, Spain) and
-          <strong>
-            <a href="https://produccioncientifica.ucm.es/investigadores/187322/publicaciones">Juan Rodriguez-Hortala</a>
-          </strong>
-          (Universidad Complutense de Madrid, Spain)
-        </p>
-
-        <p>
-          Modern software engineering embraces practices such as unit testing and
-          continuous integration, while formal verification techniques remain
-          largely confined to specialized domains. However, as software systems
-          become increasingly distributed, complex, and safety-critical,
-          stronger validation mechanisms become ever more necessary. Achieving
-          wider adoption of formal validation requires approaches that are
-          accessible to everyday developers and aligned with existing workflows.
+          (Università degli Studi di Genova, Italy)
         </p>
         <p>
-          We present Linoleum, an application for checking properties over
-          OpenTelemetry traces using Maude specifications. By operating directly
-          on real execution traces, Linoleum remains close to the mental models
-          developers already use for debugging and monitoring. It employs the
-          OpenTelemetry ecosystem to facilitate adoption in production
-          environments and supports continuous runtime validation of deployed
-          systems. Linoleum scales horizontally using Apache Flink to spawn
-          multiple distributed Maude interpreters, while properties are
-          specified through lightweight Maude monitors. We demonstrate the
-          usefulness of the approach with a chatbot case study and evaluate its
-          scalability.
+          Trace expressions are a formal, system-agnostic language tailored for
+          rewriting-based runtime verification, specifically designed to bridge
+          the gap between rigorous formal methods and the practical needs of
+          software engineers. In this talk, I will first introduce the core
+          formalism and outline its operational semantics, built on the
+          foundational notion of Antimirov's partial derivatives. Next, I will
+          showcase how the formalism is employed in significant real-world
+          applications. Finally, I will discuss open challenges and directions
+          for future research, including the relationship between trace
+          expressions and behavioral types.
         </p>
-      </section>
-
-      <section aria-labelledby="talk-smart-home-monitoring">
-        <h2 id="talk-smart-home-monitoring">
-          Dynamic Device Environments in Runtime Verification: Monitoring Power
-          Consumption in Smart Homes
-        </h2>
-        <p class="authors">
-          <strong><a href="https://l0e42.github.io/">Elli Anastasiadi</a></strong>
-          (Aalborg University, Denmark), <strong>Aske Leth Raaen Thomsen</strong>
-          (Aalborg University, Denmark), <strong>Christian Steen Nielsen</strong>
-          (Aalborg University, Denmark), <strong>Nina Hansen Blegmand</strong>
-          (Technical University of Denmark, Denmark) and
-          <strong>Simon Stjernholm</strong> (Aalborg University, Denmark)
-        </p>
-
+        <h3>Short Bio</h3>
         <p>
-          Runtime verification aims to determine satisfactions or violations of
-          specifications by observing the current execution of a system. Recent
-          advances within the field have focused more and more on monitoring
-          multiple traces and determining the satisfaction of collective
-          properties between them. Such a setup is that of smart homes, where
-          smart appliances can be instrumented, controlled, and given pre-defined
-          instructions via smart home managements systems. This digital shift has
-          lead to an increased need for monitoring the power consumption behavior
-          over time. Runtime Verification is well-suited for such specifications
-          which often resemble standard temporal logic formalisms combined with
-          basic arithmetic between numerical values. However, in current formal
-          verification works, once a monitor has been synthesized and
-          instrumented on a multiple component system, new components cannot be
-          added at runtime, making the overall system quite static. Moreover,
-          and once a verdict has been reached, the monitor must be restarted.
-        </p>
-        <p>
-          In this paper we address both of this issues. The static device
-          environment is addressed- by defining a specification language called
-          Power Metric Integer Interval Temporal Logic, which combines elements
-          from temporal logics, dealing with temporal behavior, hyperlogics,
-          dealing with multiple components, and stream based specifications,
-          dealing with sensor inputs and basic arithmetic. The multiple verdicts
-          issue is addressed by our monitoring synthesis for the safety fragment
-          of our logic, for which we also provide a tool implementation and
-          evaluation.
-        </p>
-      </section>
-
-      <section aria-labelledby="talk-autoware-safety">
-        <h2 id="talk-autoware-safety">
-          Experimental Safety Verification of Autoware through Simulink Modeling
-          and SMT-Based Analysis
-        </h2>
-        <p class="authors">
-          <strong><a href="https://fp.jaist.ac.jp/public/Default2.aspx?id=715&amp;l=1">Daisuke Ishii</a></strong>
-          (Japan Advanced Institute of Science and Technology, Japan),
-          <strong><a href="https://tlab.hongo.wide.ad.jp/People/pengfei-lin/">Pengfei Lin</a></strong>
-          (The University of Tokyo, Japan), <strong>Wunna Hein</strong> (Mahidol
-          University, Thailand), <strong>Shazia Husain</strong> (Mahidol University,
-          Thailand) and <strong>Jonathan Reppert</strong> (Mahidol University, Thailand)
-        </p>
-
-        <p>
-          Formal verification can provide strong guarantees for mathematical
-          models of autonomous driving systems, while the applicability of such
-          guarantees to their actual software and hardware implementations
-          remains a critical issue. In this work, we investigate a combined
-          approach that connects static verification of a Simulink model with
-          trajectory-based conformance checking of Autoware.
-        </p>
-        <p>
-          We first construct a Simulink model of main components of the Autoware
-          control system, including Pure Pursuit-based lateral control,
-          PID-based longitudinal control, and vehicle dynamics represented by a
-          kinematic bicycle model. We can also use built-in blocks provided by
-          the Automated Driving Toolbox to leverage industry expertise. The
-          safety properties of this model are then analyzed using a dedicated
-          model checker based on an SMT solver, providing static guarantees over
-          the modeled behavior. The properties to be verified include the error
-          relative to the target waypoints and the reachability of branch
-          conditions in the model. To relate the verification results to
-          Autoware, we execute corresponding driving scenarios in both Autoware
-          and Simulink and compare their resulting trajectories. Autoware
-          execution logs, including planned trajectories, vehicle poses, and
-          velocities, are used to reproduce the scenarios in Simulink, and the
-          conformance between the two systems is quantitatively evaluated using
-          metrics such as the Skorokhod distance. It is based on a comparison of
-          the states of the two systems across space and time.
-        </p>
-        <p>
-          This combination of static model checking and runtime conformance
-          analysis provides a practical bridge between formal guarantees
-          obtained for models developped with Simulink and the behavior of a
-          complex autonomous driving implementation. Our experiments explore the
-          potential of such a static and runtime synergy for increasing
-          confidence in the safety of Autoware.
+          Davide Ancona is an Associate Professor at the University of Genoa,
+          Italy. He is a senior investigator and coordinator for the "Secure and
+          Reliable Systems" research line within the DIBRIS department. His main
+          research interests include Runtime Verification, type systems, and the
+          design and foundations of programming languages. He is currently the
+          President of the Executive Board of
+          <a href="https://sites.google.com/aito.org/home">AITO</a>, which serves
+          as the steering committee for
+          <a href="https://sites.google.com/aito.org/home/ecoop">ECOOP</a>. Since
+          2016, he has been co-organizing the
+          <a href="https://conf.researchr.org/series/vortex">VORTEX</a> workshop
+          on Runtime Verification, co-located with ECOOP.
         </p>
       </section>
 
@@ -476,6 +311,171 @@
           latter, by using the session types to generate monitors that provide
           additional guarantees on the functional correctness of redundant
           components in the system.
+        </p>
+      </section>
+
+      <section aria-labelledby="talk-low-latency-tracing">
+        <h2 id="talk-low-latency-tracing">
+          Towards Low-Latency Model-Based Trace-Checking in Maude
+        </h2>
+        <p class="authors">
+          <strong>
+            <a href="https://produccioncientifica.ucm.es/investigadores/145108/colaboracion/investigador/1211848">Adrián Riesco</a>
+          </strong>
+          (Universidad Complutense de Madrid, Spain) and
+          <strong>
+            <a href="https://produccioncientifica.ucm.es/investigadores/187322/publicaciones">Juan Rodriguez-Hortala</a>
+          </strong>
+          (Universidad Complutense de Madrid, Spain)
+        </p>
+
+        <p>
+          Modern software engineering embraces practices such as unit testing and
+          continuous integration, while formal verification techniques remain
+          largely confined to specialized domains. However, as software systems
+          become increasingly distributed, complex, and safety-critical,
+          stronger validation mechanisms become ever more necessary. Achieving
+          wider adoption of formal validation requires approaches that are
+          accessible to everyday developers and aligned with existing workflows.
+        </p>
+        <p>
+          We present Linoleum, an application for checking properties over
+          OpenTelemetry traces using Maude specifications. By operating directly
+          on real execution traces, Linoleum remains close to the mental models
+          developers already use for debugging and monitoring. It employs the
+          OpenTelemetry ecosystem to facilitate adoption in production
+          environments and supports continuous runtime validation of deployed
+          systems. Linoleum scales horizontally using Apache Flink to spawn
+          multiple distributed Maude interpreters, while properties are
+          specified through lightweight Maude monitors. We demonstrate the
+          usefulness of the approach with a chatbot case study and evaluate its
+          scalability.
+        </p>
+      </section>
+
+      <section aria-labelledby="talk-autoware-safety">
+        <h2 id="talk-autoware-safety">
+          Experimental Safety Verification of Autoware through Simulink Modeling
+          and SMT-Based Analysis
+        </h2>
+        <p class="authors">
+          <strong><a href="https://fp.jaist.ac.jp/public/Default2.aspx?id=715&amp;l=1">Daisuke Ishii</a></strong>
+          (Japan Advanced Institute of Science and Technology, Japan),
+          <strong><a href="https://tlab.hongo.wide.ad.jp/People/pengfei-lin/">Pengfei Lin</a></strong>
+          (The University of Tokyo, Japan), <strong>Wunna Hein</strong> (Mahidol
+          University, Thailand), <strong>Shazia Husain</strong> (Mahidol University,
+          Thailand) and <strong>Jonathan Reppert</strong> (Mahidol University, Thailand)
+        </p>
+
+        <p>
+          Formal verification can provide strong guarantees for mathematical
+          models of autonomous driving systems, while the applicability of such
+          guarantees to their actual software and hardware implementations
+          remains a critical issue. In this work, we investigate a combined
+          approach that connects static verification of a Simulink model with
+          trajectory-based conformance checking of Autoware.
+        </p>
+        <p>
+          We first construct a Simulink model of main components of the Autoware
+          control system, including Pure Pursuit-based lateral control,
+          PID-based longitudinal control, and vehicle dynamics represented by a
+          kinematic bicycle model. We can also use built-in blocks provided by
+          the Automated Driving Toolbox to leverage industry expertise. The
+          safety properties of this model are then analyzed using a dedicated
+          model checker based on an SMT solver, providing static guarantees over
+          the modeled behavior. The properties to be verified include the error
+          relative to the target waypoints and the reachability of branch
+          conditions in the model. To relate the verification results to
+          Autoware, we execute corresponding driving scenarios in both Autoware
+          and Simulink and compare their resulting trajectories. Autoware
+          execution logs, including planned trajectories, vehicle poses, and
+          velocities, are used to reproduce the scenarios in Simulink, and the
+          conformance between the two systems is quantitatively evaluated using
+          metrics such as the Skorokhod distance. It is based on a comparison of
+          the states of the two systems across space and time.
+        </p>
+        <p>
+          This combination of static model checking and runtime conformance
+          analysis provides a practical bridge between formal guarantees
+          obtained for models developped with Simulink and the behavior of a
+          complex autonomous driving implementation. Our experiments explore the
+          potential of such a static and runtime synergy for increasing
+          confidence in the safety of Autoware.
+        </p>
+      </section>
+
+      <section aria-labelledby="talk-runtime-uncertainty">
+        <h2 id="talk-runtime-uncertainty">
+          Runtime Verification under Uncertainty: Experiences from STARK
+        </h2>
+        <p class="authors">
+          <strong>
+            <a href="https://sites.google.com/view/joanbetancourt">Sebastián Betancourt</a>
+          </strong>
+          (Eindhoven University of Technology, Netherlands)
+        </p>
+
+        <p>
+          The STARK tool set has been introduced for the verification and
+          analysis of systems operating under uncertainty. It offers evolution
+          sequences for the representation of system behaviour, namely
+          sequences of distributions over states generated by a model of a
+          program operating in an evolving environment.
+        </p>
+        <p>
+          We have been working on runtime verification (RV) of systems under
+          uncertainty using STARK. Since the evolution-sequence model was
+          originally developed for (static) statistical model checking, we have
+          adapted our framework to support runtime observations.
+        </p>
+        <p>
+          This presentation explains the challenges encountered in developing a
+          formal theory of RV in this context, as well as the lessons learned
+          from developing a safety shield for an autonomous-driving case study.
+        </p>
+      </section>
+
+      <section aria-labelledby="talk-smart-home-monitoring">
+        <h2 id="talk-smart-home-monitoring">
+          Dynamic Device Environments in Runtime Verification: Monitoring Power
+          Consumption in Smart Homes
+        </h2>
+        <p class="authors">
+          <strong><a href="https://l0e42.github.io/">Elli Anastasiadi</a></strong>
+          (Aalborg University, Denmark), <strong>Aske Leth Raaen Thomsen</strong>
+          (Aalborg University, Denmark), <strong>Christian Steen Nielsen</strong>
+          (Aalborg University, Denmark), <strong>Nina Hansen Blegmand</strong>
+          (Technical University of Denmark, Denmark) and
+          <strong>Simon Stjernholm</strong> (Aalborg University, Denmark)
+        </p>
+
+        <p>
+          Runtime verification aims to determine satisfactions or violations of
+          specifications by observing the current execution of a system. Recent
+          advances within the field have focused more and more on monitoring
+          multiple traces and determining the satisfaction of collective
+          properties between them. Such a setup is that of smart homes, where
+          smart appliances can be instrumented, controlled, and given pre-defined
+          instructions via smart home managements systems. This digital shift has
+          lead to an increased need for monitoring the power consumption behavior
+          over time. Runtime Verification is well-suited for such specifications
+          which often resemble standard temporal logic formalisms combined with
+          basic arithmetic between numerical values. However, in current formal
+          verification works, once a monitor has been synthesized and
+          instrumented on a multiple component system, new components cannot be
+          added at runtime, making the overall system quite static. Moreover,
+          and once a verdict has been reached, the monitor must be restarted.
+        </p>
+        <p>
+          In this paper we address both of this issues. The static device
+          environment is addressed- by defining a specification language called
+          Power Metric Integer Interval Temporal Logic, which combines elements
+          from temporal logics, dealing with temporal behavior, hyperlogics,
+          dealing with multiple components, and stream based specifications,
+          dealing with sensor inputs and basic arithmetic. The multiple verdicts
+          issue is addressed by our monitoring synthesis for the safety fragment
+          of our logic, for which we also provide a tool implementation and
+          evaluation.
         </p>
       </section>
 

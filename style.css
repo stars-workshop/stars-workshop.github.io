@@ -169,3 +169,37 @@ footer {
     grid-column: 1;
   }
 }
+.schedule {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.schedule .break td,
+.schedule .conclusion td,
+.schedule td.welcome {
+  background: color-mix(in srgb, var(--accent) 12%, white);
+}
+
+.schedule td.invited {
+  background: #fff3b0;
+}
+
+.schedule a {
+  font-weight: bold;
+}
+
+.schedule thead {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
