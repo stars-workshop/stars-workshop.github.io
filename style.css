@@ -127,7 +127,20 @@ a {
 }
 
 .support-note {
+  display: flex;
+  align-items: center;
   font-style: italic;
+}
+
+.support-logo {
+  height: 3rem;
+  width: auto;
+  margin-right: 0.75rem;
+  flex: 0 0 auto;
+}
+
+.support-note span {
+  flex: 1 1 auto;
 }
 
 .news-section {
