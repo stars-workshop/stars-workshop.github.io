@@ -206,6 +206,25 @@ footer {
   vertical-align: middle;
 }
 
+.schedule .opening-grid {
+  display: grid;
+  grid-template-columns: 53px minmax(0, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.schedule .opening-grid > div {
+  padding: 0.5rem 0.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.schedule .opening-grid > div:nth-child(even) {
+  border-left: 1px solid var(--border);
+}
+
+.schedule .opening-grid .opening-time:first-child {
+  grid-row: 1 / 3;
+}
+
 .schedule .break td,
 .schedule .conclusion td {
   background: color-mix(in srgb, var(--accent) 12%, white);
@@ -216,6 +235,7 @@ footer {
 }
 
 .schedule td.invited {
+  grid-row: 2 / 5;
   background: #fff3b0;
 }
 
@@ -233,4 +253,8 @@ footer {
   height: 1px;
   overflow: hidden;
   clip-path: inset(50%);
+}
+
+.schedule tr.quarter-hour {
+  height: 1.25rem;
 }
