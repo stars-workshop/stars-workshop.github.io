@@ -126,6 +126,17 @@ a {
   color: var(--accent);
 }
 
+/* Public-domain PDF icon: https://commons.wikimedia.org/wiki/File:PDF_file_icon.svg */
+a[href^="slides/"][href$=".pdf"]::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 1em;
+  margin-right: 0.25em;
+  vertical-align: -0.1em;
+  background: url("images/pdf-file-icon.svg") center / contain no-repeat;
+}
+
 .support-note {
   display: flex;
   align-items: center;
@@ -210,6 +221,10 @@ footer {
 
 .schedule a {
   font-weight: bold;
+}
+
+.schedule a[href^="slides/"][href$=".pdf"] {
+  font-weight: normal;
 }
 
 .schedule thead {
